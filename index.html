@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO -->
+    <title>Samuel Niyonsenga — Full‑Stack Developer & UX/UI Designer</title>
+    <meta name="description" content="Samuel Niyonsenga — Portfolio: web & mobile developer, UX/UI designer. See projects, skills and contact for collaborations.">
+    <link rel="canonical" href="https://YOUR_DOMAIN/">
+    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Samuel Niyonsenga — Full‑Stack Developer & UX/UI Designer">
+    <meta property="og:description" content="Portfolio showcasing web, mobile and UX/UI work by Samuel Niyonsenga.">
+    <meta property="og:url" content="https://YOUR_DOMAIN/">
+    <meta property="og:image" content="https://YOUR_DOMAIN/src/img/og-image.jpg">
+    <meta property="og:site_name" content="Samuel Niyonsenga">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@your_twitter">
+    <meta name="twitter:title" content="Samuel Niyonsenga — Full‑Stack Developer & UX/UI Designer">
+    <meta name="twitter:description" content="Portfolio showcasing web, mobile and UX/UI work by Samuel Niyonsenga.">
+    <meta name="twitter:image" content="https://YOUR_DOMAIN/src/img/og-image.jpg">
+
+    <!-- Misc -->
+    <meta name="author" content="Samuel Niyonsenga">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="/src/img/favicon.ico" type="image/x-icon">
+
+    <!-- JSON-LD structured data (Person / Organization) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Samuel Niyonsenga",
+      "url": "https://YOUR_DOMAIN/",
+      "sameAs": [
+        "https://www.linkedin.com/in/your-linkedin",
+        "https://github.com/your-github",
+        "https://twitter.com/your_twitter"
+      ],
+      "jobTitle": "Full-Stack Developer & UX/UI Designer",
+      "image": "https://YOUR_DOMAIN/src/img/og-image.jpg",
+      "email": "mailto:sniyonsenga123@gmail.com"
+    }
+    </script>
+
+    <!-- OPTIONAL: Google reCAPTCHA or other scripts kept below or elsewhere -->
+    <!-- ...other head content (styles, fonts, etc.) ... -->
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo-container">
+                <img src="src/img/logo.png" alt="Logo" class="logo">
+            </div>
+
+            <div class="site-title" aria-label="Site title">Samuel Niyonsenga</div>
+
+            <div class="auth-actions" role="navigation" aria-label="Authentication">
+                <button class="btn-auth login-btn" data-target="loginModal">Login</button>
+                <button class="btn-auth signup-btn" data-target="signupModal">Sign In</button>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- image slider -->
+        <div class="hero" id="hero-slider" aria-roledescription="carousel">
+            <div class="slides">
+                <div class="slide"><img src="src/img/smlMean.jpg" alt="Profile 1"></div>
+                <div class="slide"><img src="src/img/smlMean-2.jpg" alt="Profile 2"></div>
+                <div class="slide"><img src="src/img/smlMean-3.jpg" alt="Profile 3"></div>
+            </div>
+
+            <div class="slider-controls" aria-hidden="true">
+                <button id="prevBtn" aria-label="Previous slide">‹</button>
+                <button id="nextBtn" aria-label="Next slide">›</button>
+            </div>
+
+            <div class="dots" id="dots" aria-hidden="true"></div>
+        </div>
+
+        <!-- social links -->
+        <div class="social-media">
+            <a href="src/cv/SamuelNiyonsengaCV.pdf" download><i class="fas fa-file-download"></i></a>
+            <a href="https://www.linkedin.com/in/samuel-niyonsenga-123456789/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+            <a href="https://facebook.com/samuel.mean"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com/samuel"><i class="fab fa-instagram"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+
+            <div class="about-inner">
+                <div class="about-left">
+                    <div class="about-carousel" aria-hidden="false">
+                        <img src="src/img/about-1.jpg" alt="Samuel 1">
+                        <img src="src/img/about-2.jpg" alt="Samuel 2">
+                        <img src="src/img/about-3.jpg" alt="Samuel 3">
+                    </div>
+                </div>
+
+                <div class="about-right">
+                    <h3>Welcome</h3>
+                    <p>Hello! I'm Samuel Niyonsenga — a passionate developer building clean, user-friendly web experiences. I enjoy designing interfaces, solving problems, and learning new technologies.</p>
+                    <a class="btn-contact" href="https://wa.me/25078256792" target="_blank" rel="noopener noreferrer">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- START: Technologies / Skills (moved under About) -->
+        <section id="skills" class="skills-section">
+            <h2>Technologies I Use</h2>
+
+            <div class="skills-grid">
+                <article class="skill-card" style="--delay: 0s;">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <h3>Python</h3>
+                    <p class="skill-role">Scripting & backend</p>
+                    <p class="skill-desc">Easy-to-read language used for automation, data work and web servers.</p>
+                </article>
+
+                <article class="skill-card" style="--delay: 0.08s;">
+                    <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                    <h3>JavaScript</h3>
+                    <p class="skill-role">Frontend & interactivity</p>
+                    <p class="skill-desc">Runs in browsers to make web pages dynamic and interactive.</p>
+                </article>
+
+                <article class="skill-card" style="--delay: 0.16s;">
+                    <div class="skill-icon"><i class="fab fa-php"></i></div>
+                    <h3>PHP</h3>
+                    <p class="skill-role">Server-side development</p>
+                    <p class="skill-desc">Common on web servers to create and serve website content.</p>
+                </article>
+
+                <article class="skill-card" style="--delay: 0.24s;">
+                    <div class="skill-icon"><i class="fab fa-laravel"></i></div>
+                    <h3>Laravel</h3>
+                    <p class="skill-role">PHP framework</p>
+                    <p class="skill-desc">Makes building PHP web apps faster with helpful tools and structure.</p>
+                </article>
+
+                <article class="skill-card" style="--delay: 0.32s;">
+                    <div class="skill-icon"><i class="fab fa-react"></i></div>
+                    <h3>React</h3>
+                    <p class="skill-role">Single-page apps</p>
+                    <p class="skill-desc">Library for building fast, component-based user interfaces.</p>
+                </article>
+
+                <article class="skill-card" style="--delay: 0.40s;">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>MongoDB</h3>
+                    <p class="skill-role">NoSQL databases</p>
+                    <p class="skill-desc">Stores data in flexible documents instead of tables.</p>
+                </article>
+
+                <article class="skill-card" style="--delay: 0.48s;">
+                    <div class="skill-icon"><i class="fab fa-java"></i></div>
+                    <h3>Java</h3>
+                    <p class="skill-role">General-purpose & backend</p>
+                    <p class="skill-desc">Widely-used language for large applications and Android apps.</p>
+                </article>
+
+                <article class="skill-card" style="--delay: 0.56s;">
+                    <div class="skill-icon"><i class="fas fa-seedling"></i></div>
+                    <h3>Spring</h3>
+                    <p class="skill-role">Java framework</p>
+                    <p class="skill-desc">Helps build Java backend services quickly (Spring Boot).</p>
+                </article>
+
+                <article class="skill-card" style="--delay: 0.64s;">
+                    <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                    <h3>Docker</h3>
+                    <p class="skill-role">Containerization</p>
+                    <p class="skill-desc">Packages apps so they run the same on any machine.</p>
+                </article>
+
+                <article class="skill-card" style="--delay: 0.72s;">
+                    <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                    <h3>Git</h3>
+                    <p class="skill-role">Version control</p>
+                    <p class="skill-desc">Tracks code changes and helps collaborate with others.</p>
+                </article>
+            </div>
+        </section>
+        <!-- END: Technologies / Skills -->
+
+        <!-- START: Projects -->
+        <section id="projects" class="projects-section">
+            <h2>Projects</h2>
+
+            <div class="projects-grid">
+                <article class="project-card" style="--delay:0s;">
+                    <h3>Ireme Technologies</h3>
+                    <p class="project-desc">Corporate website for Ireme Technologies — services, portfolio and contact.</p>
+                    <a class="project-link" href="https://iremetech.com" target="_blank" rel="noopener noreferrer">Visit site</a>
+                </article>
+
+                <article class="project-card" style="--delay:0.06s;">
+                    <h3>SmartCity Technologies</h3>
+                    <p class="project-desc">Smart city solutions demo site and project showcase.</p>
+                    <a class="project-link" href="https://smartcitytech.free.nf" target="_blank" rel="noopener noreferrer">Visit site</a>
+                </article>
+
+                <article class="project-card" style="--delay:0.12s;">
+                    <h3>SmartCity MobileApp</h3>
+                    <p class="project-desc">Mobile application for SmartCity features (maps, alerts, services).</p>
+                    <a class="project-link" href="#" aria-disabled="true">Coming soon</a>
+                </article>
+
+                <article class="project-card" style="--delay:0.18s;">
+                    <h3>Ihahiro Online Market</h3>
+                    <p class="project-desc">E‑commerce marketplace for Ihahiro — product listings and checkout.</p>
+                    <a class="project-link" href="https://ihahiro.com" target="_blank" rel="noopener noreferrer">Visit site</a>
+                </article>
+
+                <article class="project-card" style="--delay:0.24s;">
+                    <h3>Ihahiro App</h3>
+                    <p class="project-desc">Mobile app companion for Ihahiro Online Market (orders, profile).</p>
+                    <a class="project-link" href="#" aria-disabled="true">Coming soon</a>
+                </article>
+
+                <article class="project-card" style="--delay:0.30s;">
+                    <h3>Universal Forex Management</h3>
+                    <p class="project-desc">Management system for forex operations and transaction tracking.</p>
+                    <a class="project-link" href="#" aria-disabled="true">More info</a>
+                </article>
+            </div>
+        </section>
+        <!-- END: Projects -->
+
+        <!-- START: Our Services (new) -->
+        <section id="services" class="services-section">
+            <h2>Our Services</h2>
+            <p class="services-lead">Solutions I deliver — clear, practical and production-ready.</p>
+
+            <div class="services-grid">
+                <article class="service-card" style="--delay:0s;">
+                    <div class="service-icon"><i class="fas fa-laptop-code" aria-hidden="true"></i></div>
+                    <h3>Software Development</h3>
+                    <p>Full-stack solutions: backend logic, APIs and reliable server code.</p>
+                </article>
+
+                <article class="service-card" style="--delay:0.06s;">
+                    <div class="service-icon"><i class="fas fa-mobile-screen-button" aria-hidden="true"></i></div>
+                    <h3>Mobile App Development</h3>
+                    <p>Native or cross-platform apps for Android & iOS that users enjoy.</p>
+                </article>
+
+                <article class="service-card" style="--delay:0.12s;">
+                    <div class="service-icon"><i class="fas fa-headset" aria-hidden="true"></i></div>
+                    <h3>IT Support</h3>
+                    <p>Technical support, maintenance and troubleshooting for systems and users.</p>
+                </article>
+
+                <article class="service-card" style="--delay:0.18s;">
+                    <div class="service-icon"><i class="fas fa-globe" aria-hidden="true"></i></div>
+                    <h3>Website Development</h3>
+                    <p>Modern responsive websites focused on performance and UX.</p>
+                </article>
+
+                <article class="service-card" style="--delay:0.24s;">
+                    <div class="service-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+                    <h3>Data Analytics</h3>
+                    <p>Turn data into insights with reporting, dashboards and analysis.</p>
+                </article>
+
+                <article class="service-card" style="--delay:0.30s;">
+                    <div class="service-icon"><i class="fas fa-bullhorn" aria-hidden="true"></i></div>
+                    <h3>Digital Marketing</h3>
+                    <p>SEO, campaigns and content strategy to help your product reach people.</p>
+                </article>
+
+                <article class="service-card" style="--delay:0.36s;">
+                    <div class="service-icon"><i class="fas fa-network-wired" aria-hidden="true"></i></div>
+                    <h3>Networking Service</h3>
+                    <p>Network design, setup and monitoring for reliable connectivity.</p>
+                </article>
+
+                <article class="service-card" style="--delay:0.42s;">
+                    <div class="service-icon"><i class="fas fa-microchip" aria-hidden="true"></i></div>
+                    <h3>IoT Services</h3>
+                    <p>Sensor integration, device management and cloud telemetry solutions.</p>
+                </article>
+            </div>
+        </section>
+        <!-- END: Our Services -->
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <p class="contact-lead">Ready to collaborate or have a question? Message me on WhatsApp or leave a short note below — I will reply as soon as possible.</p>
+
+            <div class="contact-grid">
+                <div class="contact-left">
+                    <a class="btn-whatsapp" href="https://wa.me/250782567921?text=Hello%20Samuel%2C%20I%20would%20like%20to%20get%20in%20touch." target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+
+                    <div class="social-links" aria-label="Social links">
+                        <a href="https://www.linkedin.com/in/samuel-niyonsenga-123456789/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://facebook.com/samuel.mean" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/samuel" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="src/cv/CV_Niyonsenga_Samuel.pdf" download title="Download CV"><i class="fas fa-file-download"></i></a>
+                        <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+
+                    <div class="contact-note">
+                        <strong>Prefer email?</strong> Use the form — it will open your mail app with the message prefilled.
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div class="input-group">
+                            <input id="c-name" name="name" type="text" placeholder="Your Name" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="input-group">
+                            <input id="c-email" name="email" type="email" placeholder="Your Email" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="c-message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                            <i class="fas fa-message"></i>
+                        </div>
+                        <button type="submit" class="btn-contact">Send Message</button>
+
+                        <div id="form-msg" class="form-msg" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    <!-- contact form handler (mailto fallback) -->
+    <script>
+    (function(){
+        const form = document.getElementById('contact-form');
+        const msgEl = document.getElementById('form-msg');
+
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+            const name = document.getElementById('c-name').value.trim();
+            const email = document.getElementById('c-email').value.trim();
+            const message = document.getElementById('c-message').value.trim();
+            if (!name || !email || !message) {
+                msgEl.textContent = 'Please fill all fields.';
+                msgEl.style.color = '#c0392b';
+                return;
+            }
+
+            // TODO: replace with your real email address
+            const recipient = 'sniyonsenga123@gmail.com';
+            const subject = encodeURIComponent('Website message from ' + name);
+            const body = encodeURIComponent(message + '\n\n---\nFrom: ' + name + '\nEmail: ' + email);
+
+            // open email client
+            window.location.href = 'mailto:' + recipient + '?subject=' + subject + '&body=' + body;
+
+            msgEl.textContent = 'Opening your email client...';
+            msgEl.style.color = '#0b6623';
+
+            // clear after short delay
+            setTimeout(() => {
+                form.reset();
+            }, 800);
+        });
+    })();
+    </script>
+    </main>
+
+    <!-- START: Footer (with copyright) -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-section networks">
+                <h4>Connect with me</h4>
+                <div class="footer-social">
+                    <a href="https://wa.me/250782567921" target="_blank" rel="noopener noreferrer" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/samuel-niyonsenga-123456789/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://facebook.com/samuel.mean" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/samuel" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section feedback">
+                <h4>Leave feedback</h4>
+                <form id="footer-feedback-form" class="footer-form">
+                    <input id="fb-name" name="name" type="text" placeholder="Your name">
+                    <textarea id="fb-message" name="message" rows="3" placeholder="Your feedback or question"></textarea>
+                    <button type="submit" class="btn-contact small">Send feedback</button>
+                    <div id="fb-msg" class="form-msg" aria-live="polite"></div>
+                </form>
+            </div>
+
+            <div class="footer-section subscribe">
+                <h4>Subscribe for updates</h4>
+                <form id="subscribe-form" class="footer-form">
+                    <input id="sub-email" name="email" type="email" placeholder="Your email" required>
+                    <button type="submit" class="btn-contact small">Subscribe</button>
+                    <div id="sub-msg" class="form-msg" aria-live="polite"></div>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <small>© <span id="footer-year"></span> Samuel Niyonsenga. All rights reserved.</small>
+        </div>
+    </footer>
+    <!-- END: Footer -->
+    
+    <script>
+    (function(){
+        // update year
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+        // Replace with your real email
+        const recipient = 'sniyonsenga123@gmail.com';
+
+        // feedback form -> opens mail client with message
+        const fbForm = document.getElementById('footer-feedback-form');
+        const fbMsg = document.getElementById('fb-msg');
+        fbForm.addEventListener('submit', function(e){
+            e.preventDefault();
+            const name = document.getElementById('fb-name').value.trim();
+            const message = document.getElementById('fb-message').value.trim();
+            if (!message) {
+                fbMsg.textContent = 'Please write a short message.';
+                fbMsg.style.color = '#c0392b';
+                return;
+            }
+            const subject = encodeURIComponent('Website feedback from ' + (name || 'visitor'));
+            const body = encodeURIComponent(message + '\n\n---\nFrom: ' + (name || 'anonymous'));
+            window.location.href = 'mailto:' + recipient + '?subject=' + subject + '&body=' + body;
+            fbMsg.textContent = 'Opening email client...';
+            fbMsg.style.color = '#0b6623';
+            setTimeout(()=> { fbForm.reset(); }, 900);
+        });
+
+        // subscribe form -> simple mailto or show message
+        const subForm = document.getElementById('subscribe-form');
+        const subMsg = document.getElementById('sub-msg');
+        subForm.addEventListener('submit', function(e){
+            e.preventDefault();
+            const email = document.getElementById('sub-email').value.trim();
+            if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
+                subMsg.textContent = 'Please enter a valid email.';
+                subMsg.style.color = '#c0392b';
+                return;
+            }
+            // mailto to collect subscriber (replace recipient if you want special mailbox)
+            const subject = encodeURIComponent('Subscribe: website updates');
+            const body = encodeURIComponent('Please subscribe this address:\n\n' + email);
+            window.location.href = 'mailto:' + recipient + '?subject=' + subject + '&body=' + body;
+            subMsg.textContent = 'Opening email client to confirm subscription...';
+            subMsg.style.color = '#0b6623';
+            setTimeout(()=> { subForm.reset(); }, 900);
+        });
+    })();
+    </script>
+
+    <!-- single consolidated JS file -->
+    <script src="src/js/general/script.js" defer></script>
+
+    <!-- Login Modal -->
+<div id="loginModal" class="modal-overlay" aria-hidden="true">
+    <div class="modal">
+        <button class="modal-close">Close</button>
+        <div class="modal-head">
+            <img src="src/img/logo.png" alt="Logo" class="modal-logo"> <!-- Add your logo path here -->
+            <h2 class="modal-welcome">Welcome Back!</h2>
+        </div>
+        <form id="login-form" class="modal-form">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit" class="btn-modal btn-primary">Login</button>
+        </form>
+    </div>
+</div>
+
+<!-- Sign Up Modal -->
+<div id="signupModal" class="modal-overlay" aria-hidden="true">
+    <div class="modal">
+        <button class="modal-close">Close</button>
+        <div class="modal-head">
+            <img src="src/img/logo.png" alt="Logo" class="modal-logo"> 
+            <h2 class="modal-welcome">Join Us!</h2>
+        </div>
+        <form id="signup-form" class="modal-form">
+            <input type="text" placeholder="Username" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit" class="btn-modal btn-success">Sign Up</button>
+            
+        </form>
+    </div>
+</div>
+</body>
+</html>
